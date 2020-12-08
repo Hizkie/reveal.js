@@ -55,35 +55,137 @@
 				<h6 style="font-family: News Cyclel;">Tools for Ethiopian and Eritran Manuscript Transcritpion</h6><br><p style="font-family: News Cyclel">
 				</section>
 
+
 				<section>
-				<h6 style="font-family: News Cyclel;">Beta maṣāḥǝft research environment for the Manuscripts from Ethiopia and Eritrea</h6><br><p style="font-family: News Cyclel">
-				<p class="fragment st" style="font-size: 24px; text-align: left;">The project Beta maṣāḥǝft: Manuscripts
-                  of Ethiopia and Eritrea (Schriftkultur des christlichen Äthiopiens und Eritreas:
-                  eine multimediale Forschungsumgebung) is a long-term project funded within the
-                  framework of the Academiesʼ Programme (coordinated by the Union of the German
-                  Academies of Sciences and Humanities) under survey of the Akademie der
-                  Wissenschaften in Hamburg. The project is hosted by the Hiob Ludolf Centre for
-                  Ethiopian Studies at the Universität Hamburg and is lead by Prof. Alessandro
-                  Bausi.</p>
+				<p class="fragment st" style="font-size: 24px; text-align: left;"> A few studies have been conducted about ethiopic handwriting recognition systems  
+				<ol>
+					<li  lass="fragment st" class="ai ai-orcid" aria-hidden="true">
+						<a href="https://www.researchgate.net/publication/224599581_HMM-Based_Handwritten_Amharic_Word_Recognition_with_Feature_Concatenation">Assabie and Bigun 2008</a>
+				    </li>
+					<ul class="fragment st" style="font-size: 24px; text-align: left;">
+						<li>HMM-based Amharic word recognition </li>
+						<li>76% accuracy rate with 10,932 training words</li>
+					</ul>
 
-                  <p class="fragment st" style="font-size: 24px; text-align: left;">In order to obtain a TEI file with an initial text transcription
-               from manuscripts, to be published alongside the catalogue description of the
-               manuscript itself, we have investigated a series of options, among which we have
-               chosen to use the <b>Transkribus</b> sofware by READ Coop.</p>
-
+					<li lass="fragment st" class="ai ai-orcid" aria-hidden="true">
+						<a href="https://link.springer.com/article/10.1007/s42452-019-1340-4">Ancient Geez script recognition using deep learning</a>
+				    </li>
+					<ul class="fragment st" style="font-size: 24px; text-align: left;">
+						<li>Deep Neural Network</li>
+						<li>99.39% accuracy rate</li>
+					</ul>
+           		</ol>
+           		<ul>
+           				<li class="fragment fade-in-then-out">These models are designed for Amharic, not for Classical Ethiopic.</li> 
+           				<li class="fragment fade-in-then-out">Too complex to replicate.</li>
+           		</ul>
 				</section>
 				<section>
-				<h6 style="font-family: News Cyclel;">Transkribus</h6><br><p style="font-family: News Cyclel">
-				<p class="fragment st" style="font-size: 24px; text-align: left;"></p>
+				<h6 style="font-family: News Cyclel;">Other tools</h6><br><p style="font-family: News Cyclel">
+		     	</section>
 
-                  <p class="fragment st" style="font-size: 24px; text-align: left;">In order to obtain a TEI file with an initial text transcription
-               from manuscripts, to be published alongside the catalogue description of the
-               manuscript itself, we have investigated a series of options, among which we have
-               chosen to use the <b>Transkribus</b> sofware by READ Coop.</p>
+				<section>
+				<h6 style="font-family: News Cyclel;  text-transform: inherit;">OpenCV</h6><br><p style="font-family: News Cyclel">
+				<img lass="fragment st" src="images/opencv.png" style="width: 200px; height: 200px; float: left; margin-top: -100px"></img> <br><br>
+                  <p class="fragment st" style="font-size: 24px; text-align: left;">OpenCV is an open source computer vision and machine
+                  learning software library. It is primarily used to detect an object. </p>
+
+                  <p class="fragment st" style="font-size: 24px; text-align: left;">Specific to OCR technologies, OpenCV helps to perform image segmentation. The output of the image segmentation is an input for the model training stage</p>
 
 				</section>
 
+				<section>
+	                <p style="font-size: 24px; text-align: left;">It is a known fact that in relation to image quality most historical documents 
+	                suffer some  common problems which makes the recognition process difficult. 
+	                Therefore, in order to eliminate undesired noise in an image and prepare  
+	                the image for the next stage, preprocessing is crucial. For this stage, one 
+	                can use  OpenCV for cleaning a given image. 
+	                Thus the application of <span class="fragment highlight-red">Opencv for HTR technologies 
+	                is limited to preprocessing stage </span>.</p>
+				</section>
 
+				<section>
+				    <h6 style="font-family: News Cyclel;  text-transform: inherit;">Google Vision AI</h6><br><p style="font-family: News Cyclel">
+	                <p class="fragment st" style="font-size: 24px; text-align: left;">Cloud Vision API’s text recognition feature is able to detect a wide variety of
+                  languages and can detect multiple languages within a single image. It includes training data for Amharic language, which however it is not complete.</p>
+
+	                <p class="fragment st" style="font-size: 24px; text-align: left;">Google technology, has been recently revised for Syriac by Ephrem A. Ishac, in  two
+                  blog posts <a href="https://digitalorientalist.com/2020/05/17/brief-notes-on-ocr-and-the-automated-transcription-of-syriac-books/">(1,</a><a href="https://digitalorientalist.com/2020/10/06/google-lens-for-syriac-something-miraculous/">2)</a> with encouraging results. </p>
+
+                  <p class="fragment st" style="font-size: 24px; text-align: left;" >Our tests for Ethiopic
+                  have not yield similarly results, especially when it comes to <span class="fragment highlight-red">large
+                  quantities of images.</span> Although these solutions are good for small tasks they do
+                  not seem to be scalable enough or to be able to become part of a stable
+                  workflow.</p>
+				</section>
+
+				<section>
+				    <h6 style="font-family: News Cyclel;  text-transform: inherit;">Tesseract</h6><br><p style="font-family: News Cyclel">
+				    <ul class="fragment st" style="font-size: 24px; text-align: left;">
+						<li>Open Source</li>
+						<li>version 4 of Tesseract support for deep network architectures such as LSTM-CNN-Hybrids, however GPU support is not offered</li>
+						<li class="fragment st">Not reprodusable</li>
+					</ul>
+				</section>
+				<section>
+				    <h6 style="font-family: News Cyclel;  text-transform: inherit;">Transkribus</h6><br><p style="font-family: News Cyclel">
+				    <ul class="fragment st" style="font-size: 24px; text-align: left;">
+						<li class="fragment st">Freely accessible</li>
+						<li class="fragment st">currently (June 2020) used by more than 37,000 registered users.</li> 
+						<li class="fragment st">An Expert tool</li>
+						<img class="fragment st" src='images/transcribus.jpg' style="width: 20%; height: 20%; float: left;">
+						<div style="margin-left: 25%; margin-top: 5%">
+							<li class="fragment st">Upload images</li>
+							<li class="fragment st">Training model</li>
+							<li class="fragment st">Transcription</li>
+						</div>
+					</ul>
+				</section>
+				<section>
+					<h2 style="font-family: News Cyclel">Training Model</h2><br><p style="font-family: News Cyclel">
+					<img class="fragment st" src='images/collection.jpg' style="width: 30%; height: 20%; float: left;">
+					<p class="fragment st" style="float: left; margin-top: 35%; margin-left: -25%; font-size: 20px;">Data collection</p>
+					<span class="fragment st" style="float: left; margin-top: 7%">&#8594;</span>
+					<img class="fragment st" src='images/clean data.png' style="width: 30%; height: 20%; float: left;">
+				    <p class="fragment st" style="float: left; margin-top: 35%; margin-left: -25%; font-size: 20px;">Data Cleaning</p>
+					<span class="fragment st" style="float: left;  margin-top: 7%">&#8594;</span>
+					<img class="fragment st" src='images/transcription.png' style="width: 30%; height: 20%; float: left;">
+				    <p class="fragment st" style="float: left; margin-top: 35%; margin-left: -25%; font-size: 20px;">Adding transcription</p>
+					<ul style="margin-top: 5%;">
+						<li class="fragment highlight-red" style="font-size: 18px">Led also to the discovery of several errors in the hand-made transcription</li>
+						<li class="fragment highlight-red" style="font-size: 18px">50k words so that the model is pubic</li>
+					</ul>
+				 </section>
+				 <section>
+				    <h6 style="font-family: News Cyclel;  text-transform: inherit;">Transcription using the trained model</h6><br><p style="font-family: News Cyclel">
+					<img class="fragment st" src='images/text_alignment.jpg' style="width: 15%; height: 20%; float: left;">
+					<p class="fragment st" style="float: left; margin-top: 35%; margin-left: -15%; font-size: 15px;">Alignment</p>
+					<span class="fragment st" style="float: left; margin-top: 7%">&#8594;</span>
+					<img class="fragment st" src='images/transcription.png' style="width: 15%; height: 20%; float: left;">
+				    <p class="fragment st" style="float: left; margin-top: 35%; margin-left: -15%; font-size: 15px;">Run the model</p>
+					<span class="fragment st" style="float: left;  margin-top: 7%">&#8594;</span>
+					<img class="fragment st" src='images/tei.png' style="width: 20%; height: 15%; float: left;">
+				    <p class="fragment st" style="float: left; margin-top: 35%; margin-left: -15%; font-size: 15px;">Export to TEI</p>
+					<span class="fragment st" style="float: left;  margin-top: 7%">&#8594;</span>
+					<img class="fragment st" src='images/xslt.png' style="width: 20%; height: 15%; float: left;">
+				    <p class="fragment st" style="float: left; margin-top: 35%; margin-left: -15%; font-size: 15px;">TEI to BM TEI stracture</p>
+				    <span class="fragment st" style="float: left;  margin-top: 7%">&#8594;</span>
+					<img class="fragment st" src='images/github.png' style="width: 15%; height: 20%; float: left; margin-top: 7%;">
+					<p class="fragment st" style="float: left; margin-top: 35%; margin-left: -15%; font-size: 15px;">PTEI to BM Github repository</p>
+				 </section>	
+
+				<section>
+				    <h6 style="font-family: News Cyclel;  text-transform: inherit;">Conclusion</h6><br><p style="font-family: News Cyclel">
+					      <ul lass="fragment st">
+					      	<li class="fragment fade-in-then-out">Provide to the community of a way to support the process of transcribing to machine format</li>
+					      	<li class="fragment fade-in-then-out">Encoders can point to a part of the transcription using locus and avoid keying in the text from the transcription of a cataloguer in the teiHeader .</li>
+					      	<li class="fragment fade-in-then-out">Helps the communityto identify an unknown text using the functionality of the search index</li>
+					      	<li class="fragment fade-in-then-out">Easy to use</li>
+
+					      </ul>
+		              
+           	 	</section>			
+			</div>		
 			</div>
 		</div>
 
