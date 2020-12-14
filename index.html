@@ -19,12 +19,28 @@
 		<div class="reveal">
 			<div class="slides">
 				<section><h3 style="font-family: News Cyclel;">Working with <span style="font-style: italic">Transkribus</span></h3><br>
-					<h4>From MSS to texts</h4></section>
+					<h4>From MSS to texts</h4>
+					<p>Hizkiel Alemayehu</p>
+					<i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:hizkiel.alemayehu@studio.unibo.it">hizkiel.alemayehu@studio.unibo.it</a>
+					<p>December 16, 2020, Hamburg</p>
+
+
+				</section>
+
+				<section>
+					<h3 style="font-family: News Cyclel;">About me</h3>
+					<ul class="fragment st" style="font-size: 24px; text-align: left;">
+						<li>I am a Digital Humanities student at University of Bologna. </li>
+						<li>Currently I am Erasmus trainee at The Hiob Ludolf Centre for Ethiopian and Eritrean Studies (HLCEES).</li>
+						<li>I am working on Ethiopic manuscript transcription using Transkribus in Beta maṣāḥǝft project.</li>
+					</ul>
+				</section>
+
 				<section>
 					<h2 style="font-family: News Cyclel">Introduction</h2><br><p style="font-family: News Cyclel">
-					<img class="fragment st" src='images/King_Theodores_Bible,_first_page._Wellcome_M0008108.jpg' style="width: 20%; height: 20%; float: left;">
+					<img class="fragment st" src='images/manuscript.jpg' style="width: 20%; height: 40%; float: left;">
 					<span class="fragment st" style="float: left; margin-top: 7%">&#8594;</span>
-					<img class="fragment st" src='images/transcribus.jpg' style="width: 20%; height: 20%; float: left;">
+					<img class="fragment st" src='images/transcribus.jpg' style="width: 20%; height: 40%; float: left;">
 					<span class="fragment st" style="float: left;  margin-top: 7%">&#8594;</span>
 					<img class="fragment st" src='images/tei.jpg' style="width: 20%; height: 20%; float: left;">
 					<span class="fragment st" style="float: left;  margin-top: 7%">&#8594;</span>
@@ -35,6 +51,25 @@
                			transcription which profits from a wealth of information which is machine generated
 						but can still be used in a context of <b>community based contributions</b>.</p>
 				 </section>
+
+				<section>
+					<h2 style="font-family: News Cyclel; margin-top: -10%;">TEI</h2><br><p style="font-family: News Cyclel">
+					<img class="fragment st" src='images/tei.jpg' style="width: 30%; height: 20%;">
+					<p class="fragment st" style="text-align: left">The Text Encoding Initiative (TEI) is a consortium which collectively develops and maintains a standard for the representation of texts in digital form.</p> 
+       
+				</section>
+
+				<section>
+					<h3 style="font-family: News Cyclel;">Beta maṣāḥǝft project</h3>
+					<ul class="fragment st" style="font-size: 24px; text-align: left;">
+						<li class="fragment st">Able to collect a number of manuscritps. </li>
+						<li class="fragment st">Working on cataloging</li>
+						<li class="fragment st">Getting transcription</li>
+						<li class="fragment st" > <span class="fragment highlight-red">But getting transcription of each manuscript is impossible </span> </li>
+					</ul>
+				</section>
+
+
 				<section>
 					<h2 style="font-family: News Cyclel; margin-top: -10%;">Transcription</h2><br><p style="font-family: News Cyclel">
 					<p class="fragment st" style="text-align: left">This stage is critical to get sufficient acquaintance with a text to be able to carry out the editorial and
@@ -43,10 +78,11 @@
 
        
 				</section>
+
 				<section>
 				 <h3 style="font-family: News Cyclel;">Why Technology?</h3><br><p style="font-family: News Cyclel">
 					<img class="fragment st" src="images/time.jpg" style="float: left; width: 20%; height: 10%;"></img> 
-					<div  class="fragment st"  style="width: 600px; height: 150px; float: left; padding: 10px; border-style: dotted; border-width: 1px;"><p>To optimize time utilization</p></div><br><br><br><br><br><br>
+					<div  class="fragment st"  style="width: 600px; height: 150px; float: left; padding: 10px; border-style: dotted; border-width: 1px;"><p>Efficiency</p></div><br><br><br><br><br><br>
 					<img class="fragment st" src="images/1280px-Bible.malmesbury.jpg" style="float: left; width: 20%; height: 10%;"></img>
 					<div  class="fragment st"  style="width: 600px; height: 150px; float: left; padding: 10px; border-style: dotted; border-width: 1px; margin-left: 2%"><p>To mange vast amount of data</p></div>
 				</section>
@@ -68,7 +104,7 @@
 					</ul>
 
 					<li lass="fragment st" class="ai ai-orcid" aria-hidden="true">
-						<a href="https://link.springer.com/article/10.1007/s42452-019-1340-4">Ancient Geez script recognition using deep learning</a>
+						<a href="https://link.springer.com/article/10.1007/s42452-019-1340-4">FA Demilew, B Sekeroglu</a>
 				    </li>
 					<ul class="fragment st" style="font-size: 24px; text-align: left;">
 						<li>Deep Neural Network</li>
@@ -76,10 +112,32 @@
 					</ul>
            		</ol>
            		<ul>
-           				<li class="fragment fade-in-then-out">These models are designed for Amharic, not for Classical Ethiopic.</li> 
-           				<li class="fragment fade-in-then-out">Too complex to replicate.</li>
+           				<li class="fragment st">These models are designed for Amharic, not for Classical Ethiopic.</li> 
+           				<li class="fragment st">Too complex to replicate.</li>
            		</ul>
 				</section>
+
+
+
+      <section>
+      			<h3 style="font-family: News Cyclel;">Hidden Marcov Model (HMM)</h3>
+      			 <img class="fragment st" src="images/hmm.jpg" style="width: 70%; height: 70%;"/>
+      			  <p class="fragment st">The HMM is based on augmenting the Markov chain. A Markov chain is a model
+that tells us something about the probabilities of sequences of random variables,
+states, each of which can take on values from some set.</p>
+        </section>
+
+
+
+
+				<section>
+				<h6 style="font-family: News Cyclel;">Deep Nueral Netrwork</h6><br><p style="font-family: News Cyclel">
+					<p class="fragment st" style="text-align: left; font-size: 28px;">Models the human brain</p>
+					<p class="fragment st" style="text-align: left; font-size: 28px;">Deep neural networks are artificial neural networks with 2 or more hidden layers</p>
+					<img  class="fragment st" src="images/nueralnet.jpg"  style="width: 70%; height: 70%;"/>
+		     	</section>
+
+
 				<section>
 				<h6 style="font-family: News Cyclel;">Other tools</h6><br><p style="font-family: News Cyclel">
 		     	</section>
@@ -130,9 +188,7 @@
 				<section>
 				    <h6 style="font-family: News Cyclel;  text-transform: inherit;">Transkribus</h6><br><p style="font-family: News Cyclel">
 				    <ul class="fragment st" style="font-size: 24px; text-align: left;">
-						<li class="fragment st">Freely accessible</li>
-						<li class="fragment st">currently (June 2020) used by more than 37,000 registered users.</li> 
-						<li class="fragment st">An Expert tool</li>
+						<li class="fragment st"><a href="https://transkribus.eu/Transkribus"></a> An Expert tool</li>
 						<img class="fragment st" src='images/transcribus.jpg' style="width: 20%; height: 20%; float: left;">
 						<div style="margin-left: 25%; margin-top: 5%">
 							<li class="fragment st">Upload images</li>
@@ -141,30 +197,44 @@
 						</div>
 					</ul>
 				</section>
+
+								<section>
+					<h2 style="font-family: News Cyclel">Introduction</h2><br><p style="font-family: News Cyclel">
+					<img class="fragment st" src='images/manuscript.jpg' style="width: 30%; height: 40%; float: left;">
+					<span class="fragment st" style="float: left; margin-top: 7%">&#8594;</span>
+					<img class="fragment st" src='images/textregion.jpg' style="width: 30%; height: 40%; float: left;">
+					<span class="fragment st" style="float: left;  margin-top: 7%">&#8594;</span>
+					<img class="fragment st" src='images/transcription.jpg' style="width: 30%; height: 400%; float: left;">
+				 </section>
+
+
 				<section>
 					<h2 style="font-family: News Cyclel">Training Model</h2><br><p style="font-family: News Cyclel">
-					<img class="fragment st" src='images/collection.jpg' style="width: 30%; height: 20%; float: left;">
+					<img class="fragment st" src='images/manuscript.jpg' style="width: 30%; height: 20%; float: left;">
 					<p class="fragment st" style="float: left; margin-top: 35%; margin-left: -25%; font-size: 20px;">Data collection</p>
 					<span class="fragment st" style="float: left; margin-top: 7%">&#8594;</span>
 					<img class="fragment st" src='images/clean data.png' style="width: 30%; height: 20%; float: left;">
 				    <p class="fragment st" style="float: left; margin-top: 35%; margin-left: -25%; font-size: 20px;">Data Cleaning</p>
 					<span class="fragment st" style="float: left;  margin-top: 7%">&#8594;</span>
-					<img class="fragment st" src='images/transcription.png' style="width: 30%; height: 20%; float: left;">
-				    <p class="fragment st" style="float: left; margin-top: 35%; margin-left: -25%; font-size: 20px;">Adding transcription</p>
-					<ul style="margin-top: 5%;">
-						<li class="fragment highlight-red" style="font-size: 18px">Led also to the discovery of several errors in the hand-made transcription</li>
-						<li class="fragment highlight-red" style="font-size: 18px">50k words so that the model is pubic</li>
-					</ul>
+					<img class="fragment st" src='images/transcription.jpg' style="width: 30%; height: 20%; float: left;">
+				 </section>
+                 <section>
+					<h2 style="font-family: News Cyclel">Training Model</h2><br><p style="font-family: News Cyclel">
+				    <p class="fragment st">Able to  add more than 50k words into for building the ground truth to training a model</p>
+					<img class="fragment st" src='images/transcription.jpg' style="width: 30%; height: 20%; float: left;">
+	<span class="fragment st" style="float: left;  margin-top: 7%">&#8594;</span>
+                    <img class="fragment st" src='images/models.jpg' style="width: 30%; height: 20%; float: left;">
 				 </section>
 				 <section>
 				    <h6 style="font-family: News Cyclel;  text-transform: inherit;">Transcription using the trained model</h6><br><p style="font-family: News Cyclel">
-					<img class="fragment st" src='images/text_alignment.jpg' style="width: 15%; height: 20%; float: left;">
+				    					
+					<img class="fragment st" src='images/textregion.jpg' style="width: 15%; height: 20%; float: left;">
 					<p class="fragment st" style="float: left; margin-top: 35%; margin-left: -15%; font-size: 15px;">Alignment</p>
 					<span class="fragment st" style="float: left; margin-top: 7%">&#8594;</span>
-					<img class="fragment st" src='images/transcription.png' style="width: 15%; height: 20%; float: left;">
+					<img class="fragment st" src='images/transcription.jpg' style="width: 15%; height: 20%; float: left;">
 				    <p class="fragment st" style="float: left; margin-top: 35%; margin-left: -15%; font-size: 15px;">Run the model</p>
 					<span class="fragment st" style="float: left;  margin-top: 7%">&#8594;</span>
-					<img class="fragment st" src='images/tei.png' style="width: 20%; height: 15%; float: left;">
+					<img class="fragment st" src='images/tei.jpg' style="width: 20%; height: 15%; float: left;">
 				    <p class="fragment st" style="float: left; margin-top: 35%; margin-left: -15%; font-size: 15px;">Export to TEI</p>
 					<span class="fragment st" style="float: left;  margin-top: 7%">&#8594;</span>
 					<img class="fragment st" src='images/xslt.png' style="width: 20%; height: 15%; float: left;">
@@ -177,14 +247,18 @@
 				<section>
 				    <h6 style="font-family: News Cyclel;  text-transform: inherit;">Conclusion</h6><br><p style="font-family: News Cyclel">
 					      <ul lass="fragment st">
-					      	<li class="fragment fade-in-then-out">Provide to the community of a way to support the process of transcribing to machine format.</li>
-					      	<li class="fragment fade-in-then-out">Encoders can point to a part of the transcription using locus and avoid keying in the text from the transcription of a cataloguer in the teiHeader.</li>
-					      	<li class="fragment fade-in-then-out">Helps the community to identify an unknown text using the functionality of the search index.</li>
-					      	<li class="fragment fade-in-then-out">Easy to use.</li>
+					      	<li class="fragment st">We have reviewed the latest technologies for transcription</li>
+					      	<li class="fragment st">We collect manuscripts</li>
 
+					      	<li class="fragment st">Perform text alignment</li>
+					      	<li class="fragment st">Build transcription Models</li>
+					      	<li class="fragment st">Trankribus is a better solution becuase it is an expert tool and easy to use</li>
 					      </ul>
 		              
-           	 	</section>			
+           	 	</section>
+				<section>
+				    <h6 style="font-family: News Cyclel;  text-transform: inherit;">Thank you for your attention!</h6><br><p style="font-family: News Cyclel">
+           	 	</section>		
 			</div>		
 			</div>
 		</div>
